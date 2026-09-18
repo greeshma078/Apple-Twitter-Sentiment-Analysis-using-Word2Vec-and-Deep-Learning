@@ -2,7 +2,6 @@ import streamlit as st
 import numpy as np
 import re
 import pickle
-import tensorflow as tf
 
 from gensim.models import Word2Vec
 from tensorflow import keras
