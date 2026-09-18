@@ -12,19 +12,18 @@ from tensorflow import keras
 # 1. LOAD SAVED MODELS
 # =========================================================
 
-word2vec_model = Word2Vec.load("models/word2vec.model")
+word2vec_model = Word2Vec.load("word2vec.model")
 
 model = keras.models.load_model(
-    "models/sentiment_model.keras",
+    "sentiment_model.keras",
     compile=False
 )
 
-with open("models/scaler.pkl", "rb") as file:
+with open("scaler.pkl", "rb") as file:
     scaler = pickle.load(file)
 
-with open("models/label_encoder.pkl", "rb") as file:
+with open("label_encoder.pkl", "rb") as file:
     label_encoder = pickle.load(file)
-
 
 # =========================================================
 # 2. TEXT CLEANING FUNCTION
