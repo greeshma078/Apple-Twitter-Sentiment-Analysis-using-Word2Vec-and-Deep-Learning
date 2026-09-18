@@ -1,0 +1,8 @@
+streamlit
+numpy==1.26.4
+pandas
+scikit-learn
+scipy==1.13.1
+gensim==4.3.3
+tensorflow==2.16.2
+keras==3.12.4
